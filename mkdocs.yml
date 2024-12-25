@@ -135,6 +135,7 @@ markdown_extensions:
 # Navigation  ...............................................
 nav:
   - Markmaps:
+    - index.md
     - azure-ai-foundry.md
     - bon-msignite-2024.md
 
