@@ -1,0 +1,18 @@
+{
+	"name": "Nitya Learns With Markmaps",
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"gera2ld.markmap-vscode",
+				"ms-python.python"
+			]
+		}
+	},
+
+    "forwardPorts": [8000],
+    
+	"postCreateCommand": "pip3 install -r requirements.txt"
+
+}
