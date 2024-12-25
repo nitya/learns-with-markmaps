@@ -38,7 +38,7 @@ theme:
   font:
     code: Roboto Mono  #Monospaced
     text: Roboto       #Regular
-  logo: img/logo.svg
+  logo: img/nitya-learns-ai.png
   language: en
 
   # Theme Modes ...............................................
@@ -103,7 +103,7 @@ plugins:
   - search
   - markmap:
     # See: https://github.com/markmap/mkdocs-markmap
-      base_path: markmaps
+      base_path: docs
       encoding: utf-8
       file_extension: .mm.md
 
@@ -134,4 +134,8 @@ markdown_extensions:
 
 # Navigation  ...............................................
 nav:
+  - Markmaps:
+    - azure-ai-foundry.md
+    - bon-msignite-2024.md
+
 
