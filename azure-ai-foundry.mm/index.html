@@ -1,0 +1,1486 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Explore various">
+      
+      
+        <meta name="author" content="Nitya Narasimhan">
+      
+      
+        <link rel="canonical" href="https://nitya.github.io/learns-with-markmaps/azure-ai-foundry.mm/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Dec 2024 - Learn With Markmaps</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-R6NWRNLWCZ"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-R6NWRNLWCZ",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-R6NWRNLWCZ",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dec-2024" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Learn With Markmaps" class="md-header__button md-logo" aria-label="Learn With Markmaps" data-md-component="logo">
+      
+  <img src="../img/nitya-learns-ai.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Learn With Markmaps
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Dec 2024
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="pink"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/nitya/learns-with-markmaps" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    nitya/learns-with-markmaps
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+    
+  
+  Markmaps
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Learn With Markmaps" class="md-nav__button md-logo" aria-label="Learn With Markmaps" data-md-component="logo">
+      
+  <img src="../img/nitya-learns-ai.png" alt="logo">
+
+    </a>
+    Learn With Markmaps
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/nitya/learns-with-markmaps" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    nitya/learns-with-markmaps
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href=".." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Markmaps
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Markmaps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../azure-ai-foundry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docs: Azure AI Foundry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bon-msignite-2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BookOfNews: MSIgnite 2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-what-is-azure-ai-foundryhttpslearnmicrosoftcomen-usazureai-studiowhat-is-ai-studio" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 What is Azure AI Foundry?https://learn.microsoft.com/en-us/azure/ai-studio/what-is-ai-studio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-azure-ai-foundry-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Azure AI Foundry architecture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-azure-openai-in-azure-ai-foundry" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Azure OpenAI in Azure AI Foundry
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-management-center" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 Management center
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-azure-ai-foundry-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 Azure AI Foundry SDK
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-region-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6 Region support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-azure-ai-faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7 Azure AI FAQ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-which-studio-should-i-choose" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8 Which studio should I choose?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-quickstarts" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Quickstarts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Quickstarts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-use-the-chat-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Use the chat playground
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-build-a-chat-app-using-the-azure-ai-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Build a chat app using the Azure AI SDK
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-get-started-using-azure-openai-assistants" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Get started using Azure OpenAI Assistants
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-tutorials" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Tutorials
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Tutorials">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-deploy-an-enterprise-chat-web-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Deploy an enterprise chat web app
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-build-a-custom-chat-app-with-the-azure-ai-foundry-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Build a custom chat app with the Azure AI Foundry SDK
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-how-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. How-To
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. How-To">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-azure-openai-and-ai-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Azure OpenAI and AI Services
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-explore-and-select-ai-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Explore and select AI models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-deploy-ai-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Deploy AI models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-create-a-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 Create a project
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-manage-projects-and-hubs" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5 Manage projects and hubs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.6 Connections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-data-for-your-generative-ai-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.7 Data for your generative AI app
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48-develop-generative-ai-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.8 Develop generative AI apps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#49-evaluate-generative-ai-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.9 Evaluate generative AI apps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#410-deploy-and-monitor-generative-ai-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.10 Deploy and monitor generative AI apps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#411-costs-and-quotas" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.11 Costs and quotas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-security-governance" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Security &amp; Governance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Security & Governance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-identity-access-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Identity &amp; Access Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-network-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Network Security
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-data-protection-encryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 Data Protection &amp; Encryption
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-azure-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 Azure Policies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-vulnerability-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.5 Vulnerability management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-disaster-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.6 Disaster recovery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57-security-baseline" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.7 Security baseline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-responsible-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Responsible AI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Responsible AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-responsible-ai-overviewhttpslearnmicrosoftcomen-usazureai-studioresponsible-use-of-ai-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Responsible AI overviewhttps://learn.microsoft.com/en-us/azure/ai-studio/responsible-use-of-ai-overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-what-is-azure-ai-content-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 What is Azure AI Content Safety?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-use-azure-ai-content-safety-in-the-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 Use Azure AI Content Safety in the portal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-content-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 Content filtering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-use-blocklists" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.5 Use blocklists
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-transparency-notes-for-azure-ai-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.6 Transparency notes for Azure AI Services
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#67-limited-access-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.7 Limited Access features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#68-system-message-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.8 System message templates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#69-transparency-note-for-safety-evaluations" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.9 Transparency Note for safety evaluations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Reference
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-azure-ai-projects-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Azure AI Projects SDK
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-azure-machine-learning-python-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Azure Machine Learning Python SDK
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-azure-machine-learning-rest-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Azure Machine Learning REST API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-azure-ai-services-sdks" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 Azure AI services SDKs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-azure-ai-services-rest-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5 Azure AI services REST APIs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#76-prompt-flow-python-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6 Prompt flow Python SDK
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#77-azure-ai-model-inference-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7 Azure AI Model Inference API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#78-azure-policy-built-ins" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.8. Azure Policy built-ins
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Resources
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-support-help-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 Support &amp; help options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-use-azure-ai-foundry-with-a-screen-reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 Use Azure AI Foundry with a screen reader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-region-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3 Region support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-azure-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4 Azure updates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-pricing-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5 Pricing calculator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.6 Compliance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87-service-level-agreement-sla" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.7 Service Level Agreement (SLA)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88-azure-government" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.8 Azure Government
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#89-videos" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.9 Videos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#810-azure-blog" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.10 Azure Blog
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#811-artificial-intelligence-and-machine-learning-blog" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.11 Artificial Intelligence and Machine Learning Blog
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#812-llmops-with-prompt-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.12 LLMOps with Prompt Flow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="dec-2024">Dec 2024<a class="headerlink" href="#dec-2024" title="Permanent link">¶</a></h1>
+<hr/>
+<h2 id="1-overview">1. Overview<a class="headerlink" href="#1-overview" title="Permanent link">¶</a></h2>
+<h3 id="11-what-is-azure-ai-foundryhttpslearnmicrosoftcomen-usazureai-studiowhat-is-ai-studio">1.1 <a href="">What is Azure AI Foundry?</a>https://learn.microsoft.com/en-us/azure/ai-studio/what-is-ai-studio<a class="headerlink" href="#11-what-is-azure-ai-foundryhttpslearnmicrosoftcomen-usazureai-studiowhat-is-ai-studio" title="Permanent link">¶</a></h3>
+<h3 id="12-azure-ai-foundry-architecture">1.2 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/concepts/architecture">Azure AI Foundry architecture</a><a class="headerlink" href="#12-azure-ai-foundry-architecture" title="Permanent link">¶</a></h3>
+<h3 id="13-azure-openai-in-azure-ai-foundry">1.3 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/azure-openai-in-ai-studio">Azure OpenAI in Azure AI Foundry</a><a class="headerlink" href="#13-azure-openai-in-azure-ai-foundry" title="Permanent link">¶</a></h3>
+<h3 id="14-management-center">1.4 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/concepts/management-center">Management center</a><a class="headerlink" href="#14-management-center" title="Permanent link">¶</a></h3>
+<h3 id="15-azure-ai-foundry-sdk">1.5 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/sdk-overview">Azure AI Foundry SDK</a><a class="headerlink" href="#15-azure-ai-foundry-sdk" title="Permanent link">¶</a></h3>
+<h3 id="16-region-support">1.6 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/reference/region-support">Region support</a><a class="headerlink" href="#16-region-support" title="Permanent link">¶</a></h3>
+<h3 id="17-azure-ai-faq">1.7 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/faq">Azure AI FAQ</a><a class="headerlink" href="#17-azure-ai-faq" title="Permanent link">¶</a></h3>
+<h3 id="18-which-studio-should-i-choose">1.8 <a href="https://learn.microsoft.com/en-us/ai/ai-studio-experiences-overview?context=/azure/ai-studio/context/context">Which studio should I choose?</a><a class="headerlink" href="#18-which-studio-should-i-choose" title="Permanent link">¶</a></h3>
+<hr/>
+<h2 id="2-quickstarts">2. Quickstarts<a class="headerlink" href="#2-quickstarts" title="Permanent link">¶</a></h2>
+<h3 id="21-use-the-chat-playground">2.1 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/quickstarts/get-started-playground">Use the chat playground</a><a class="headerlink" href="#21-use-the-chat-playground" title="Permanent link">¶</a></h3>
+<h3 id="22-build-a-chat-app-using-the-azure-ai-sdk">2.2 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/quickstarts/get-started-code">Build a chat app using the Azure AI SDK</a><a class="headerlink" href="#22-build-a-chat-app-using-the-azure-ai-sdk" title="Permanent link">¶</a></h3>
+<h3 id="23-get-started-using-azure-openai-assistants">2.3 <a href="https://learn.microsoft.com/en-us/azure/ai-services/openai/assistants-quickstart?context=/azure/ai-studio/context/context">Get started using Azure OpenAI Assistants</a><a class="headerlink" href="#23-get-started-using-azure-openai-assistants" title="Permanent link">¶</a></h3>
+<hr/>
+<h2 id="3-tutorials">3. Tutorials<a class="headerlink" href="#3-tutorials" title="Permanent link">¶</a></h2>
+<h3 id="31-deploy-an-enterprise-chat-web-app">3.1 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/tutorials/deploy-chat-web-app">Deploy an enterprise chat web app</a><a class="headerlink" href="#31-deploy-an-enterprise-chat-web-app" title="Permanent link">¶</a></h3>
+<h3 id="32-build-a-custom-chat-app-with-the-azure-ai-foundry-sdk">3.2 Build a custom chat app with the Azure AI Foundry SDK<a class="headerlink" href="#32-build-a-custom-chat-app-with-the-azure-ai-foundry-sdk" title="Permanent link">¶</a></h3>
+<h4 id="321-set-up-project-and-install-sdk">3.2.1 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/tutorials/copilot-sdk-create-resources">Set up project and install SDK</a><a class="headerlink" href="#321-set-up-project-and-install-sdk" title="Permanent link">¶</a></h4>
+<h4 id="322-build-with-data-retrieval">3.2.2 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/tutorials/copilot-sdk-build-rag">Build with data retrieval</a><a class="headerlink" href="#322-build-with-data-retrieval" title="Permanent link">¶</a></h4>
+<h4 id="323-evaluate-the-chat-app">3.2.3 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/tutorials/copilot-sdk-evaluate">Evaluate the chat app</a><a class="headerlink" href="#323-evaluate-the-chat-app" title="Permanent link">¶</a></h4>
+<hr/>
+<h2 id="4-how-to">4. How-To<a class="headerlink" href="#4-how-to" title="Permanent link">¶</a></h2>
+<h3 id="41-azure-openai-and-ai-services">4.1 Azure OpenAI and AI Services<a class="headerlink" href="#41-azure-openai-and-ai-services" title="Permanent link">¶</a></h3>
+<h4 id="411-what-are-ai-services">4.1.1 <a href="https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services?context=/azure/ai-studio/context/context">What are AI services?</a><a class="headerlink" href="#411-what-are-ai-services" title="Permanent link">¶</a></h4>
+<h4 id="412-use-azure-ai-services-in-azure-ai-foundry-portal">4.1.2 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/ai-services/how-to/connect-ai-services">Use Azure AI services in Azure AI Foundry portal</a><a class="headerlink" href="#412-use-azure-ai-services-in-azure-ai-foundry-portal" title="Permanent link">¶</a></h4>
+<h4 id="413-azure-openai">4.1.3 Azure OpenAI<a class="headerlink" href="#413-azure-openai" title="Permanent link">¶</a></h4>
+<h5 id="4131-what-is-azure-openai">4.1.3.1 <a href="https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services?context=/azure/ai-studio/context/context">What is Azure OpenAI?</a><a class="headerlink" href="#4131-what-is-azure-openai" title="Permanent link">¶</a></h5>
+<h5 id="4132-use-azure-openai-service-in-azure-ai-foundry-portal">4.1.3.2 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/ai-services/how-to/connect-ai-services">Use Azure OpenAI Service in Azure AI Foundry portal</a><a class="headerlink" href="#4132-use-azure-openai-service-in-azure-ai-foundry-portal" title="Permanent link">¶</a></h5>
+<h5 id="4133-deploy-azure-openai-models">4.1.3.3 Deploy Azure OpenAI models<a class="headerlink" href="#4133-deploy-azure-openai-models" title="Permanent link">¶</a></h5>
+<h5 id="4134-fine-tune-azure-openai-models">4.1.3.4 Fine-tune Azure OpenAI models<a class="headerlink" href="#4134-fine-tune-azure-openai-models" title="Permanent link">¶</a></h5>
+<h5 id="4135-get-started-using-azure-openai-assistants">4.1.3.5 Get started using Azure OpenAI Assistants<a class="headerlink" href="#4135-get-started-using-azure-openai-assistants" title="Permanent link">¶</a></h5>
+<h5 id="4136-use-gpt-4o-in-the-real-time-audio-playground">4.1.3.6 Use GPT-4o in the real-time audio playground<a class="headerlink" href="#4136-use-gpt-4o-in-the-real-time-audio-playground" title="Permanent link">¶</a></h5>
+<h5 id="4137-analyze-images-and-video-with-gpt-4-for-vision-in-the-playground">4.1.3.7 Analyze images and video with GPT-4 for Vision in the playground<a class="headerlink" href="#4137-analyze-images-and-video-with-gpt-4-for-vision-in-the-playground" title="Permanent link">¶</a></h5>
+<h5 id="4138-use-your-image-data-with-azure-openai">4.1.3.8 Use your image data with Azure OpenAI<a class="headerlink" href="#4138-use-your-image-data-with-azure-openai" title="Permanent link">¶</a></h5>
+<h4 id="414-azure-ai-speech">4.1.4 Azure AI Speech<a class="headerlink" href="#414-azure-ai-speech" title="Permanent link">¶</a></h4>
+<h5 id="4141-real-time-speech-to-text">4.1.4.1 Real-time speech to text<a class="headerlink" href="#4141-real-time-speech-to-text" title="Permanent link">¶</a></h5>
+<h5 id="4142-pronunciation-assessment">4.1.4.2 Pronunciation assessment<a class="headerlink" href="#4142-pronunciation-assessment" title="Permanent link">¶</a></h5>
+<h5 id="4143-hear-and-speak-with-chat-in-the-playground">4.1.4.3 Hear and speak with chat in the playground<a class="headerlink" href="#4143-hear-and-speak-with-chat-in-the-playground" title="Permanent link">¶</a></h5>
+<h5 id="4144-fine-tune-in-azure-ai-foundry-portal-for-custom-speech">4.1.4.4 <a href="https://learn.microsoft.com/en-us/azure/ai-services/speech-service/custom-speech-ai-foundry-portal?context=/azure/ai-studio/context/context">Fine-tune in Azure AI Foundry portal for custom speech</a><a class="headerlink" href="#4144-fine-tune-in-azure-ai-foundry-portal-for-custom-speech" title="Permanent link">¶</a></h5>
+<h3 id="42-explore-and-select-ai-models">4.2 Explore and select AI models<a class="headerlink" href="#42-explore-and-select-ai-models" title="Permanent link">¶</a></h3>
+<h4 id="421-model-catalog">4.2.1 Model catalog<a class="headerlink" href="#421-model-catalog" title="Permanent link">¶</a></h4>
+<h4 id="422-data-privacy-and-security-for-model-catalog">4.2.2 Data, privacy, and security for Model Catalog<a class="headerlink" href="#422-data-privacy-and-security-for-model-catalog" title="Permanent link">¶</a></h4>
+<h4 id="423-model-lifecycle-and-retirement">4.2.3 Model lifecycle and retirement<a class="headerlink" href="#423-model-lifecycle-and-retirement" title="Permanent link">¶</a></h4>
+<h4 id="424-model-benchmarking">4.2.4 Model Benchmarking<a class="headerlink" href="#424-model-benchmarking" title="Permanent link">¶</a></h4>
+<h5 id="4241-model-benchmarks">4.2.4.1 Model benchmarks<a class="headerlink" href="#4241-model-benchmarks" title="Permanent link">¶</a></h5>
+<h5 id="4242-how-to-use-model-benchmarking">4.2.4.2 How to use model benchmarking<a class="headerlink" href="#4242-how-to-use-model-benchmarking" title="Permanent link">¶</a></h5>
+<h4 id="425-fine-tune-models">4.2.5 Fine-tune Models<a class="headerlink" href="#425-fine-tune-models" title="Permanent link">¶</a></h4>
+<h5 id="4251-fine-tuning-overview">4.2.5.1 Fine-tuning overview<a class="headerlink" href="#4251-fine-tuning-overview" title="Permanent link">¶</a></h5>
+<h5 id="4252-fine-tune-with-user-managed-compute">4.2.5.2 Fine-tune with user-managed compute<a class="headerlink" href="#4252-fine-tune-with-user-managed-compute" title="Permanent link">¶</a></h5>
+<h5 id="4253-fine-tune-azure-openai-models">4.2.5.3 Fine-tune Azure OpenAI models<a class="headerlink" href="#4253-fine-tune-azure-openai-models" title="Permanent link">¶</a></h5>
+<h4 id="426-distillation">4.2.6 Distillation<a class="headerlink" href="#426-distillation" title="Permanent link">¶</a></h4>
+<h4 id="427-azure-openai-models">4.2.7 Azure OpenAI Models<a class="headerlink" href="#427-azure-openai-models" title="Permanent link">¶</a></h4>
+<h5 id="4271-deploy-azure-openai-models">4.2.7.1 Deploy Azure OpenAI models<a class="headerlink" href="#4271-deploy-azure-openai-models" title="Permanent link">¶</a></h5>
+<h5 id="4272-fine-tune-azure-openai-models">4.2.7.2 Fine-tune Azure OpenAI models<a class="headerlink" href="#4272-fine-tune-azure-openai-models" title="Permanent link">¶</a></h5>
+<h4 id="428-healthcare-ai-models">4.2.8 Healthcare AI models<a class="headerlink" href="#428-healthcare-ai-models" title="Permanent link">¶</a></h4>
+<h5 id="4281-foundational-ai-models-for-healthcare">4.2.8.1 Foundational AI models for healthcare<a class="headerlink" href="#4281-foundational-ai-models-for-healthcare" title="Permanent link">¶</a></h5>
+<h5 id="4282-medimageinsight-embedding-model">4.2.8.2 MedImageInsight - embedding model<a class="headerlink" href="#4282-medimageinsight-embedding-model" title="Permanent link">¶</a></h5>
+<h5 id="4283-cxrreportgen-text-generation-model">4.2.8.3 CXRReportGen - text generation model<a class="headerlink" href="#4283-cxrreportgen-text-generation-model" title="Permanent link">¶</a></h5>
+<h5 id="4284-medimageparse-prompted-segmentation-model">4.2.8.4 MedImageParse - prompted segmentation model<a class="headerlink" href="#4284-medimageparse-prompted-segmentation-model" title="Permanent link">¶</a></h5>
+<h4 id="429-microsoft-phi-family-models">4.2.9 Microsoft Phi family models<a class="headerlink" href="#429-microsoft-phi-family-models" title="Permanent link">¶</a></h4>
+<h5 id="4291-phi-3-chat-models">4.2.9.1 Phi-3 chat models<a class="headerlink" href="#4291-phi-3-chat-models" title="Permanent link">¶</a></h5>
+<h5 id="4292-phi-3-chat-model-with-vision">4.2.9.2 Phi-3 chat model with vision<a class="headerlink" href="#4292-phi-3-chat-model-with-vision" title="Permanent link">¶</a></h5>
+<h5 id="4293-phi-35-chat-model-with-vision">4.2.9.3 Phi-3.5 chat model with vision<a class="headerlink" href="#4293-phi-35-chat-model-with-vision" title="Permanent link">¶</a></h5>
+<h5 id="4294-phi-4-chat-models">4.2.9.4 Phi-4 chat models<a class="headerlink" href="#4294-phi-4-chat-models" title="Permanent link">¶</a></h5>
+<h5 id="4295-fine-tune-phi-3-chat-models">4.2.9.5 Fine-tune Phi-3 chat models<a class="headerlink" href="#4295-fine-tune-phi-3-chat-models" title="Permanent link">¶</a></h5>
+<h4 id="4210-cohere-models">4.2.10 Cohere models<a class="headerlink" href="#4210-cohere-models" title="Permanent link">¶</a></h4>
+<h5 id="42101-cohere-command-models">4.2.10.1 Cohere Command models<a class="headerlink" href="#42101-cohere-command-models" title="Permanent link">¶</a></h5>
+<h5 id="42102-cohere-embed-models">4.2.10.2 Cohere Embed models<a class="headerlink" href="#42102-cohere-embed-models" title="Permanent link">¶</a></h5>
+<h5 id="42103-cohere-rerank-models">4.2.10.3 Cohere Rerank models<a class="headerlink" href="#42103-cohere-rerank-models" title="Permanent link">¶</a></h5>
+<h4 id="4211-meta-llama-models">4.2.11 Meta Llama models<a class="headerlink" href="#4211-meta-llama-models" title="Permanent link">¶</a></h4>
+<h5 id="42111-meta-llama-family-models">4.2.11.1 Meta Llama family models<a class="headerlink" href="#42111-meta-llama-family-models" title="Permanent link">¶</a></h5>
+<h5 id="42112-fine-tune-meta-llama-family-models">4.2.11.2 Fine-tune Meta Llama family models<a class="headerlink" href="#42112-fine-tune-meta-llama-family-models" title="Permanent link">¶</a></h5>
+<h4 id="4212-jais-model">4.2.12 JAIS model<a class="headerlink" href="#4212-jais-model" title="Permanent link">¶</a></h4>
+<h4 id="4213-jamba-models">4.2.13 Jamba models<a class="headerlink" href="#4213-jamba-models" title="Permanent link">¶</a></h4>
+<h4 id="4214-timegen-1-model">4.2.14 TimeGEN-1 model<a class="headerlink" href="#4214-timegen-1-model" title="Permanent link">¶</a></h4>
+<h4 id="4215-nttdata-tsuzumi-model">4.2.15 NTTDATA tsuzumi model<a class="headerlink" href="#4215-nttdata-tsuzumi-model" title="Permanent link">¶</a></h4>
+<h4 id="4216-fine-tune-tsuzumi-model">4.2.16 Fine-tune tsuzumi model<a class="headerlink" href="#4216-fine-tune-tsuzumi-model" title="Permanent link">¶</a></h4>
+<h3 id="43-deploy-ai-models">4.3 Deploy AI models<a class="headerlink" href="#43-deploy-ai-models" title="Permanent link">¶</a></h3>
+<h4 id="431-deployments-overview">4.3.1 Deployments overview<a class="headerlink" href="#431-deployments-overview" title="Permanent link">¶</a></h4>
+<h4 id="432-azure-ai-model-inference">4.3.2 Azure AI Model Inference<a class="headerlink" href="#432-azure-ai-model-inference" title="Permanent link">¶</a></h4>
+<h5 id="4321-what-is-the-azure-ai-model-inference-service">4.3.2.1 What is the Azure AI model inference service?<a class="headerlink" href="#4321-what-is-the-azure-ai-model-inference-service" title="Permanent link">¶</a></h5>
+<h5 id="4322-upgrade-from-github-models">4.3.2.2 Upgrade from GitHub Models<a class="headerlink" href="#4322-upgrade-from-github-models" title="Permanent link">¶</a></h5>
+<h5 id="4323-add-and-configure-models">4.3.2.3 Add and configure models<a class="headerlink" href="#4323-add-and-configure-models" title="Permanent link">¶</a></h5>
+<h5 id="4324-deployment-types">4.3.2.4 Deployment types<a class="headerlink" href="#4324-deployment-types" title="Permanent link">¶</a></h5>
+<h5 id="4325-use-the-inference-endpoint">4.3.2.5 Use the inference endpoint<a class="headerlink" href="#4325-use-the-inference-endpoint" title="Permanent link">¶</a></h5>
+<h5 id="4326-quotas-and-limits">4.3.2.6 Quotas and limits<a class="headerlink" href="#4326-quotas-and-limits" title="Permanent link">¶</a></h5>
+<h5 id="4327-azure-ai-model-inference-faq">4.3.2.7 Azure AI model inference FAQ<a class="headerlink" href="#4327-azure-ai-model-inference-faq" title="Permanent link">¶</a></h5>
+<h4 id="433">4.3.3<a class="headerlink" href="#433" title="Permanent link">¶</a></h4>
+<h5 id="4331-deploy-models-as-serverless-api">4.3.3.1 Deploy models as serverless API<a class="headerlink" href="#4331-deploy-models-as-serverless-api" title="Permanent link">¶</a></h5>
+<h5 id="4332-consume-serverless-api-models-from-a-different-project-or-hub">4.3.3.2 Consume serverless API models from a different project or hub<a class="headerlink" href="#4332-consume-serverless-api-models-from-a-different-project-or-hub" title="Permanent link">¶</a></h5>
+<h5 id="4333-model-and-region-availability-for-serverless-api-deployments">4.3.3.3 Model and region availability for Serverless API deployments<a class="headerlink" href="#4333-model-and-region-availability-for-serverless-api-deployments" title="Permanent link">¶</a></h5>
+<h5 id="434-managed-compute">4.3.4 Managed compute<a class="headerlink" href="#434-managed-compute" title="Permanent link">¶</a></h5>
+<h3 id="44-create-a-project">4.4 Create a project<a class="headerlink" href="#44-create-a-project" title="Permanent link">¶</a></h3>
+<h3 id="45-manage-projects-and-hubs">4.5 Manage projects and hubs<a class="headerlink" href="#45-manage-projects-and-hubs" title="Permanent link">¶</a></h3>
+<h4 id="451-hubs-and-projects-overview">4.5.1 Hubs and projects overview<a class="headerlink" href="#451-hubs-and-projects-overview" title="Permanent link">¶</a></h4>
+<h4 id="452-create-your-first-hub">4.5.2 Create your first hub<a class="headerlink" href="#452-create-your-first-hub" title="Permanent link">¶</a></h4>
+<h4 id="453-create-a-hub-using-the-azure-machine-learning-sdk-and-cli">4.5.3 Create a hub using the Azure Machine Learning SDK and CLI<a class="headerlink" href="#453-create-a-hub-using-the-azure-machine-learning-sdk-and-cli" title="Permanent link">¶</a></h4>
+<h4 id="454-create-a-hub-in-the-azure-portal">4.5.4 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/create-secure-ai-hub">Create a hub in the Azure portal</a><a class="headerlink" href="#454-create-a-hub-in-the-azure-portal" title="Permanent link">¶</a></h4>
+<h4 id="455-create-a-hub-from-template">4.5.5 Create a hub from template<a class="headerlink" href="#455-create-a-hub-from-template" title="Permanent link">¶</a></h4>
+<h4 id="456-create-a-hub-using-terraform">4.5.6 Create a hub using Terraform<a class="headerlink" href="#456-create-a-hub-using-terraform" title="Permanent link">¶</a></h4>
+<h4 id="457-create-and-manage-compute">4.5.7 Create and manage compute<a class="headerlink" href="#457-create-and-manage-compute" title="Permanent link">¶</a></h4>
+<h3 id="46-connections">4.6 Connections<a class="headerlink" href="#46-connections" title="Permanent link">¶</a></h3>
+<h4 id="461-connections-overview">4.6.1 Connections overview<a class="headerlink" href="#461-connections-overview" title="Permanent link">¶</a></h4>
+<h4 id="462-create-a-connection">4.6.2 Create a connection<a class="headerlink" href="#462-create-a-connection" title="Permanent link">¶</a></h4>
+<h4 id="463-create-a-connection-using-the-azure-machine-learning-sdk">4.6.3 Create a connection using the Azure Machine Learning SDK<a class="headerlink" href="#463-create-a-connection-using-the-azure-machine-learning-sdk" title="Permanent link">¶</a></h4>
+<h3 id="47-data-for-your-generative-ai-app">4.7 Data for your generative AI app<a class="headerlink" href="#47-data-for-your-generative-ai-app" title="Permanent link">¶</a></h3>
+<h4 id="471-overview-of-retrieval-augmented-generation-rag">4.7.1 Overview of retrieval augmented generation (RAG)<a class="headerlink" href="#471-overview-of-retrieval-augmented-generation-rag" title="Permanent link">¶</a></h4>
+<h4 id="472-add-data-to-your-project">4.7.2 Add data to your project<a class="headerlink" href="#472-add-data-to-your-project" title="Permanent link">¶</a></h4>
+<h4 id="473-build-and-consume-vector-indexes">4.7.3 Build and consume vector indexes<a class="headerlink" href="#473-build-and-consume-vector-indexes" title="Permanent link">¶</a></h4>
+<h4 id="474-build-and-consume-indexes-using-code">4.7.4 Build and consume indexes using code<a class="headerlink" href="#474-build-and-consume-indexes-using-code" title="Permanent link">¶</a></h4>
+<h4 id="475-synthetic-data-generation">4.7.5 Synthetic Data Generation<a class="headerlink" href="#475-synthetic-data-generation" title="Permanent link">¶</a></h4>
+<h3 id="48-develop-generative-ai-apps">4.8 Develop generative AI apps<a class="headerlink" href="#48-develop-generative-ai-apps" title="Permanent link">¶</a></h3>
+<h4 id="481-develop-in-azure-ai-foundry-portal">4.8.1 Develop in Azure AI Foundry Portal<a class="headerlink" href="#481-develop-in-azure-ai-foundry-portal" title="Permanent link">¶</a></h4>
+<h5 id="4811-build-apps-with-prompt-flow">4.8.1.1 Build apps with prompt flow<a class="headerlink" href="#4811-build-apps-with-prompt-flow" title="Permanent link">¶</a></h5>
+<h6 id="48111-prompt-flow-overview">4.8.1.1.1 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow">Prompt flow overview</a><a class="headerlink" href="#48111-prompt-flow-overview" title="Permanent link">¶</a></h6>
+<h6 id="48112-develop-flows">4.8.1.1.2 Develop flows<a class="headerlink" href="#48112-develop-flows" title="Permanent link">¶</a></h6>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/create-manage-compute-session">Create and manage compute session</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/flow-develop">Create a flow</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/flow-tune-prompts-using-variants">Tune prompts using variants</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/flow-process-image">Process images in a flow</a></li>
+<li>Use prompt flow tools<ul>
+<li><a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/prompt-flow-tools-overview">Prompt flow tools overview</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/llm-tool">LLM tool</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/prompt-tool">Prompt tool</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/python-tool">Python tool</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/azure-open-ai-gpt-4v-tool">Azure OpenAI GPT-4 Turbo with Vision tool</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/index-lookup-tool">Index Lookup tool</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/rerank-tool">Rerank tool</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/content-safety-tool">Content Safety tool</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/embedding-tool">Embedding tool</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/serp-api-tool">Serp API tool</a></li>
+</ul>
+</li>
+</ul>
+<h6 id="48113-troubleshoot-prompt-flow">4.8.1.1.3 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-troubleshoot">Troubleshoot prompt flow</a><a class="headerlink" href="#48113-troubleshoot-prompt-flow" title="Permanent link">¶</a></h6>
+<h4 id="482-develop-with-code">4.8.2 Develop with code<a class="headerlink" href="#482-develop-with-code" title="Permanent link">¶</a></h4>
+<h5 id="4821-work-with-projects-in-vs-code">4.8.2.1 Work with projects in VS Code<a class="headerlink" href="#4821-work-with-projects-in-vs-code" title="Permanent link">¶</a></h5>
+<h5 id="4822-start-with-an-ai-template">4.8.2.2 Start with an AI template<a class="headerlink" href="#4822-start-with-an-ai-template" title="Permanent link">¶</a></h5>
+<h5 id="4823-develop-with-langchain">4.8.2.3 Develop with LangChain<a class="headerlink" href="#4823-develop-with-langchain" title="Permanent link">¶</a></h5>
+<h5 id="4824-develop-with-llamaindex">4.8.2.4 Develop with LlamaIndex<a class="headerlink" href="#4824-develop-with-llamaindex" title="Permanent link">¶</a></h5>
+<h5 id="4825-develop-with-semantic-kernel">4.8.2.5 Develop with Semantic Kernel<a class="headerlink" href="#4825-develop-with-semantic-kernel" title="Permanent link">¶</a></h5>
+<h4 id="483-trace-generative-ai-apps">4.8.3 Trace Generative AI apps<a class="headerlink" href="#483-trace-generative-ai-apps" title="Permanent link">¶</a></h4>
+<h5 id="4831-tracing-overview">4.8.3.1 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/concepts/trace">Tracing overview</a><a class="headerlink" href="#4831-tracing-overview" title="Permanent link">¶</a></h5>
+<h5 id="4832-trace-your-application-with-azure-ai-inference-sdk">4.8.3.2 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/trace-local-sdk">Trace your application with Azure AI Inference SDK</a><a class="headerlink" href="#4832-trace-your-application-with-azure-ai-inference-sdk" title="Permanent link">¶</a></h5>
+<h5 id="4833-visualize-your-traces">4.8.3.3 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/visualize-traces">Visualize your traces</a><a class="headerlink" href="#4833-visualize-your-traces" title="Permanent link">¶</a></h5>
+<h3 id="49-evaluate-generative-ai-apps">4.9 Evaluate generative AI apps<a class="headerlink" href="#49-evaluate-generative-ai-apps" title="Permanent link">¶</a></h3>
+<h4 id="491-evaluations-concepts">4.9.1 Evaluations Concepts<a class="headerlink" href="#491-evaluations-concepts" title="Permanent link">¶</a></h4>
+<h4 id="492-evaluation-of-generative-ai-models-and-ai-applications">4.9.2 Evaluation of generative AI models and AI applications<a class="headerlink" href="#492-evaluation-of-generative-ai-models-and-ai-applications" title="Permanent link">¶</a></h4>
+<h4 id="493-evaluation-and-monitoring-metrics-for-generative-ai">4.9.3 Evaluation and monitoring metrics for generative AI<a class="headerlink" href="#493-evaluation-and-monitoring-metrics-for-generative-ai" title="Permanent link">¶</a></h4>
+<h4 id="494-manually-evaluate-prompts-in-the-playground">4.9.4 Manually evaluate prompts in the playground<a class="headerlink" href="#494-manually-evaluate-prompts-in-the-playground" title="Permanent link">¶</a></h4>
+<h4 id="495-generate-synthetic-and-simulated-data-for-evaluation">4.9.5 Generate synthetic and simulated data for evaluation<a class="headerlink" href="#495-generate-synthetic-and-simulated-data-for-evaluation" title="Permanent link">¶</a></h4>
+<h4 id="496-evaluate-with-the-azure-ai-evaluation-sdk">4.9.6 Evaluate with the Azure AI Evaluation SDK<a class="headerlink" href="#496-evaluate-with-the-azure-ai-evaluation-sdk" title="Permanent link">¶</a></h4>
+<h4 id="497-run-evaluations-from-the-portal">4.9.7 Run evaluations from the portal<a class="headerlink" href="#497-run-evaluations-from-the-portal" title="Permanent link">¶</a></h4>
+<h4 id="498-view-evaluation-results-in-the-portal">4.9.8 View evaluation results in the portal<a class="headerlink" href="#498-view-evaluation-results-in-the-portal" title="Permanent link">¶</a></h4>
+<h4 id="499-evaluate-flows-in-the-portal">4.9.9 Evaluate flows in the portal<a class="headerlink" href="#499-evaluate-flows-in-the-portal" title="Permanent link">¶</a></h4>
+<h5 id="4991-submit-batch-run-and-evaluate-a-flow">4.9.9.1 Submit batch run and evaluate a flow<a class="headerlink" href="#4991-submit-batch-run-and-evaluate-a-flow" title="Permanent link">¶</a></h5>
+<h5 id="4992-develop-an-evaluation-flow-in-prompt-flow">4.9.9.2 Develop an evaluation flow in Prompt flow<a class="headerlink" href="#4992-develop-an-evaluation-flow-in-prompt-flow" title="Permanent link">¶</a></h5>
+<h4 id="4910-ab-experimentation">4.9.10 A/B experimentation<a class="headerlink" href="#4910-ab-experimentation" title="Permanent link">¶</a></h4>
+<h3 id="410-deploy-and-monitor-generative-ai-apps">4.10 Deploy and monitor generative AI apps<a class="headerlink" href="#410-deploy-and-monitor-generative-ai-apps" title="Permanent link">¶</a></h3>
+<h4 id="4101-continuously-monitor-your-applications">4.10.1 Continuously monitor your applications<a class="headerlink" href="#4101-continuously-monitor-your-applications" title="Permanent link">¶</a></h4>
+<h4 id="4102-deploy-monitor-flows">4.10.2 Deploy &amp; Monitor flows<a class="headerlink" href="#4102-deploy-monitor-flows" title="Permanent link">¶</a></h4>
+<h5 id="41021-deploy-a-flow-for-real-time-inference">4.10.2.1 Deploy a flow for real-time inference<a class="headerlink" href="#41021-deploy-a-flow-for-real-time-inference" title="Permanent link">¶</a></h5>
+<h5 id="41022-enable-tracing-and-collect-feedback-for-a-flow-deployment">4.10.2.2 Enable tracing and collect feedback for a flow deployment<a class="headerlink" href="#41022-enable-tracing-and-collect-feedback-for-a-flow-deployment" title="Permanent link">¶</a></h5>
+<h5 id="41023-monitor-prompt-flow-deployments">4.10.2.3 Monitor prompt flow deployments<a class="headerlink" href="#41023-monitor-prompt-flow-deployments" title="Permanent link">¶</a></h5>
+<h5 id="41024-troubleshoot-deployments-and-monitoring">4.10.2.4 Troubleshoot deployments and monitoring<a class="headerlink" href="#41024-troubleshoot-deployments-and-monitoring" title="Permanent link">¶</a></h5>
+<h3 id="411-costs-and-quotas">4.11 Costs and quotas<a class="headerlink" href="#411-costs-and-quotas" title="Permanent link">¶</a></h3>
+<h4 id="4111-plan-and-manage-costs">4.11.1 Plan and manage costs<a class="headerlink" href="#4111-plan-and-manage-costs" title="Permanent link">¶</a></h4>
+<h4 id="4112-manage-quotas">4.11.2 Manage quotas<a class="headerlink" href="#4112-manage-quotas" title="Permanent link">¶</a></h4>
+<h4 id="4113-increase-rate-limit">4.11.3 Increase rate limit<a class="headerlink" href="#4113-increase-rate-limit" title="Permanent link">¶</a></h4>
+<hr/>
+<h2 id="5-security-governance">5. Security &amp; Governance<a class="headerlink" href="#5-security-governance" title="Permanent link">¶</a></h2>
+<h3 id="51-identity-access-management">5.1 Identity &amp; Access Management<a class="headerlink" href="#51-identity-access-management" title="Permanent link">¶</a></h3>
+<h4 id="511-role-based-access-control-in-azure-ai-foundry-portal">5.1.1 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/concepts/rbac-ai-studio">Role-based access control in Azure AI Foundry portal</a><a class="headerlink" href="#511-role-based-access-control-in-azure-ai-foundry-portal" title="Permanent link">¶</a></h4>
+<h3 id="52-network-security">5.2 Network Security<a class="headerlink" href="#52-network-security" title="Permanent link">¶</a></h3>
+<h4 id="521-configure-managed-network">5.2.1 Configure managed network<a class="headerlink" href="#521-configure-managed-network" title="Permanent link">¶</a></h4>
+<h4 id="522-configure-private-link">5.2.2 Configure private link<a class="headerlink" href="#522-configure-private-link" title="Permanent link">¶</a></h4>
+<h4 id="523-secure-playground-chat">5.2.3 Secure playground chat<a class="headerlink" href="#523-secure-playground-chat" title="Permanent link">¶</a></h4>
+<h4 id="524-securely-access-on-premises-resources">5.2.4 Securely access on-premises resources<a class="headerlink" href="#524-securely-access-on-premises-resources" title="Permanent link">¶</a></h4>
+<h4 id="525-troubleshoot-secure-project-connectivity">5.2.5 Troubleshoot secure project connectivity<a class="headerlink" href="#525-troubleshoot-secure-project-connectivity" title="Permanent link">¶</a></h4>
+<h3 id="53-data-protection-encryption">5.3 Data Protection &amp; Encryption<a class="headerlink" href="#53-data-protection-encryption" title="Permanent link">¶</a></h3>
+<h4 id="531-configure-customer-managed-keys">5.3.1 Configure customer-managed keys<a class="headerlink" href="#531-configure-customer-managed-keys" title="Permanent link">¶</a></h4>
+<h4 id="532-rotate-keys">5.3.2 Rotate keys<a class="headerlink" href="#532-rotate-keys" title="Permanent link">¶</a></h4>
+<h4 id="533-disable-shared-key-access-to-storage">5.3.3 Disable shared key access to storage<a class="headerlink" href="#533-disable-shared-key-access-to-storage" title="Permanent link">¶</a></h4>
+<h3 id="54-azure-policies">5.4 Azure Policies<a class="headerlink" href="#54-azure-policies" title="Permanent link">¶</a></h3>
+<h4 id="541-built-in-policy-to-allow-specific-models">5.4.1 Built-in policy to allow specific models<a class="headerlink" href="#541-built-in-policy-to-allow-specific-models" title="Permanent link">¶</a></h4>
+<h4 id="542-custom-policy-to-allow-specific-models">5.4.2 Custom policy to allow specific models<a class="headerlink" href="#542-custom-policy-to-allow-specific-models" title="Permanent link">¶</a></h4>
+<h3 id="55-vulnerability-management">5.5 Vulnerability management<a class="headerlink" href="#55-vulnerability-management" title="Permanent link">¶</a></h3>
+<h3 id="56-disaster-recovery">5.6 Disaster recovery<a class="headerlink" href="#56-disaster-recovery" title="Permanent link">¶</a></h3>
+<h3 id="57-security-baseline">5.7 Security baseline<a class="headerlink" href="#57-security-baseline" title="Permanent link">¶</a></h3>
+<hr/>
+<h2 id="6-responsible-ai">6. Responsible AI<a class="headerlink" href="#6-responsible-ai" title="Permanent link">¶</a></h2>
+<h3 id="61-responsible-ai-overviewhttpslearnmicrosoftcomen-usazureai-studioresponsible-use-of-ai-overview">6.1 <a href="">Responsible AI overview</a>https://learn.microsoft.com/en-us/azure/ai-studio/responsible-use-of-ai-overview<a class="headerlink" href="#61-responsible-ai-overviewhttpslearnmicrosoftcomen-usazureai-studioresponsible-use-of-ai-overview" title="Permanent link">¶</a></h3>
+<h3 id="62-what-is-azure-ai-content-safety">6.2 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/ai-services/content-safety-overview">What is Azure AI Content Safety?</a><a class="headerlink" href="#62-what-is-azure-ai-content-safety" title="Permanent link">¶</a></h3>
+<h3 id="63-use-azure-ai-content-safety-in-the-portal">6.3 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/ai-services/how-to/content-safety">Use Azure AI Content Safety in the portal</a><a class="headerlink" href="#63-use-azure-ai-content-safety-in-the-portal" title="Permanent link">¶</a></h3>
+<h3 id="64-content-filtering">6.4 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/concepts/content-filtering">Content filtering</a><a class="headerlink" href="#64-content-filtering" title="Permanent link">¶</a></h3>
+<h3 id="65-use-blocklists">6.5 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/how-to/use-blocklists">Use blocklists</a><a class="headerlink" href="#65-use-blocklists" title="Permanent link">¶</a></h3>
+<h3 id="66-transparency-notes-for-azure-ai-services">6.6 <a href="https://learn.microsoft.com/en-us/azure/ai-services/responsible-use-of-ai-overview?context=/azure/ai-studio/context/context">Transparency notes for Azure AI Services</a><a class="headerlink" href="#66-transparency-notes-for-azure-ai-services" title="Permanent link">¶</a></h3>
+<h3 id="67-limited-access-features">6.7 <a href="https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-limited-access?context=/azure/ai-studio/context/context">Limited Access features</a><a class="headerlink" href="#67-limited-access-features" title="Permanent link">¶</a></h3>
+<h3 id="68-system-message-templates">6.8 <a href="https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/system-message?context=/azure/ai-studio/context/context">System message templates</a><a class="headerlink" href="#68-system-message-templates" title="Permanent link">¶</a></h3>
+<h3 id="69-transparency-note-for-safety-evaluations">6.9 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/concepts/safety-evaluations-transparency-note">Transparency Note for safety evaluations</a><a class="headerlink" href="#69-transparency-note-for-safety-evaluations" title="Permanent link">¶</a></h3>
+<hr/>
+<h2 id="7-reference">7. Reference<a class="headerlink" href="#7-reference" title="Permanent link">¶</a></h2>
+<h3 id="71-azure-ai-projects-sdk">7.1 <a href="https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme">Azure AI Projects SDK</a><a class="headerlink" href="#71-azure-ai-projects-sdk" title="Permanent link">¶</a></h3>
+<h3 id="72-azure-machine-learning-python-sdk">7.2 <a href="https://learn.microsoft.com/en-us/python/api/overview/azure/ai-ml-readme">Azure Machine Learning Python SDK</a><a class="headerlink" href="#72-azure-machine-learning-python-sdk" title="Permanent link">¶</a></h3>
+<h3 id="73-azure-machine-learning-rest-api">7.3 <a href="https://learn.microsoft.com/en-us/rest/api/azureml">Azure Machine Learning REST API</a><a class="headerlink" href="#73-azure-machine-learning-rest-api" title="Permanent link">¶</a></h3>
+<h3 id="74-azure-ai-services-sdks">7.4 <a href="https://learn.microsoft.com/en-us/azure/ai-services/reference/sdk-package-resources?context=/azure/ai-studio/context/context">Azure AI services SDKs</a><a class="headerlink" href="#74-azure-ai-services-sdks" title="Permanent link">¶</a></h3>
+<h3 id="75-azure-ai-services-rest-apis">7.5 <a href="https://learn.microsoft.com/en-us/azure/ai-services/reference/rest-api-resources?context=/azure/ai-studio/context/context">Azure AI services REST APIs</a><a class="headerlink" href="#75-azure-ai-services-rest-apis" title="Permanent link">¶</a></h3>
+<h3 id="76-prompt-flow-python-sdk">7.6 <a href="https://microsoft.github.io/promptflow/reference/index.html">Prompt flow Python SDK</a><a class="headerlink" href="#76-prompt-flow-python-sdk" title="Permanent link">¶</a></h3>
+<h3 id="77-azure-ai-model-inference-api">7.7 Azure AI Model Inference API<a class="headerlink" href="#77-azure-ai-model-inference-api" title="Permanent link">¶</a></h3>
+<h4 id="771-whats-the-azure-ai-model-inference-api">7.7.1 <a href="">What's the Azure AI Model Inference API?</a><a class="headerlink" href="#771-whats-the-azure-ai-model-inference-api" title="Permanent link">¶</a></h4>
+<h4 id="772-reference">7.7.2 Reference<a class="headerlink" href="#772-reference" title="Permanent link">¶</a></h4>
+<h5 id="7721-get-info">7.7.2.1 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/reference/reference-model-inference-info">Get Info</a><a class="headerlink" href="#7721-get-info" title="Permanent link">¶</a></h5>
+<h5 id="7722-embeddings">7.7.2.2 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/reference/reference-model-inference-embeddings">Embeddings</a><a class="headerlink" href="#7722-embeddings" title="Permanent link">¶</a></h5>
+<h5 id="7723-completions">7.7.2.3 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/reference/reference-model-inference-completions">Completions</a><a class="headerlink" href="#7723-completions" title="Permanent link">¶</a></h5>
+<h5 id="7724-chat-completionshttpslearnmicrosoftcomen-usazureai-studioreferencereference-model-inference-chat-completions">7.7.2.4 <a href="">Chat Completions</a>https://learn.microsoft.com/en-us/azure/ai-studio/reference/reference-model-inference-chat-completions<a class="headerlink" href="#7724-chat-completionshttpslearnmicrosoftcomen-usazureai-studioreferencereference-model-inference-chat-completions" title="Permanent link">¶</a></h5>
+<h5 id="7725-images-embeddings">7.7.2.5 <a href="https://learn.microsoft.com/en-us/azure/ai-studio/reference/reference-model-inference-images-embeddings">Images Embeddings</a><a class="headerlink" href="#7725-images-embeddings" title="Permanent link">¶</a></h5>
+<h3 id="78-azure-policy-built-ins">7.8. <a href="https://learn.microsoft.com/en-us/azure/ai-services/policy-reference?context=/azure/ai-studio/context/context">Azure Policy built-ins</a><a class="headerlink" href="#78-azure-policy-built-ins" title="Permanent link">¶</a></h3>
+<hr/>
+<h2 id="8-resources">8. Resources<a class="headerlink" href="#8-resources" title="Permanent link">¶</a></h2>
+<h3 id="81-support-help-options">8.1 Support &amp; help options<a class="headerlink" href="#81-support-help-options" title="Permanent link">¶</a></h3>
+<h3 id="82-use-azure-ai-foundry-with-a-screen-reader">8.2 Use Azure AI Foundry with a screen reader<a class="headerlink" href="#82-use-azure-ai-foundry-with-a-screen-reader" title="Permanent link">¶</a></h3>
+<h3 id="83-region-support">8.3 Region support<a class="headerlink" href="#83-region-support" title="Permanent link">¶</a></h3>
+<h3 id="84-azure-updates">8.4 Azure updates<a class="headerlink" href="#84-azure-updates" title="Permanent link">¶</a></h3>
+<h3 id="85-pricing-calculator">8.5 Pricing calculator<a class="headerlink" href="#85-pricing-calculator" title="Permanent link">¶</a></h3>
+<h3 id="86-compliance">8.6 Compliance<a class="headerlink" href="#86-compliance" title="Permanent link">¶</a></h3>
+<h3 id="87-service-level-agreement-sla">8.7 Service Level Agreement (SLA)<a class="headerlink" href="#87-service-level-agreement-sla" title="Permanent link">¶</a></h3>
+<h3 id="88-azure-government">8.8 Azure Government<a class="headerlink" href="#88-azure-government" title="Permanent link">¶</a></h3>
+<h3 id="89-videos">8.9 Videos<a class="headerlink" href="#89-videos" title="Permanent link">¶</a></h3>
+<h3 id="810-azure-blog">8.10 Azure Blog<a class="headerlink" href="#810-azure-blog" title="Permanent link">¶</a></h3>
+<h3 id="811-artificial-intelligence-and-machine-learning-blog">8.11 Artificial Intelligence and Machine Learning Blog<a class="headerlink" href="#811-artificial-intelligence-and-machine-learning-blog" title="Permanent link">¶</a></h3>
+<h3 id="812-llmops-with-prompt-flow">8.12 LLMOps with Prompt Flow<a class="headerlink" href="#812-llmops-with-prompt-flow" title="Permanent link">¶</a></h3>
+<hr/>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 - present Nitya Narasimhan <br/>🍪 | <a href="#__consent">Change cookie settings</a>
+
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.expand", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.indexes", "navigation.top", "toc.follow", "navigation.footer", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>

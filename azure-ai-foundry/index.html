@@ -1,0 +1,927 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Explore various" name="description"/>
+<meta content="Nitya Narasimhan" name="author"/>
+<link href="https://nitya.github.io/learns-with-markmaps/azure-ai-foundry/" rel="canonical"/>
+<link href=".." rel="prev"/>
+<link href="../bon-msignite-2024/" rel="next"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.5.49" name="generator"/>
+<title>Docs: Azure AI Foundry - Learn With Markmaps</title>
+<link href="../assets/stylesheets/main.6f8fc17f.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-R6NWRNLWCZ"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-R6NWRNLWCZ",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-R6NWRNLWCZ",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+<script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+<script src="../js/unpkg.com/d3@7.js" type="text/javascript"></script><script src="../js/unpkg.com/markmap-lib@0.15.4.js" type="text/javascript"></script><script src="../js/unpkg.com/markmap-view@0.15.4.js" type="text/javascript"></script><style type="text/css">div.mkdocs-markmap {
+    width: 100%;
+    min-height: 1em;
+    border: 1px solid grey;
+}
+.mkdocs-markmap > svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+</style></head>
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#docs-azure-ai-foundry">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Learn With Markmaps" class="md-header__button md-logo" data-md-component="logo" href=".." title="Learn With Markmaps">
+<img alt="logo" src="../img/nitya-learns-ai.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Learn With Markmaps
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Docs: Azure AI Foundry
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="pink" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="black" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 2c-1.82 0-3.53.5-5 1.35C8 5.08 10 8.3 10 12s-2 6.92-5 8.65C6.47 21.5 8.18 22 10 22a10 10 0 0 0 10-10A10 10 0 0 0 10 2"></path></svg>
+</label>
+<input aria-label="Switch to system preference" class="md-option" data-md-color-accent="pink" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="amber" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to system preference">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/nitya/learns-with-markmaps" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    nitya/learns-with-markmaps
+  </div>
+</a>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="..">
+          
+  
+    
+  
+  Markmaps
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Learn With Markmaps" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Learn With Markmaps">
+<img alt="logo" src="../img/nitya-learns-ai.png"/>
+</a>
+    Learn With Markmaps
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/nitya/learns-with-markmaps" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    nitya/learns-with-markmaps
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="..">
+<span class="md-ellipsis">
+    Markmaps
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_1_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_1">
+<span class="md-nav__icon md-icon"></span>
+            Markmaps
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Docs: Azure AI Foundry
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../bon-msignite-2024/">
+<span class="md-ellipsis">
+    BookOfNews: MSIgnite 2024
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="docs-azure-ai-foundry">Docs: Azure AI Foundry<a class="headerlink" href="#docs-azure-ai-foundry" title="Permanent link">¶</a></h1>
+<p>This markmap visualizes the <a href="https://learn.microsoft.com/azure/ai-studio/">Azure AI Foundry documentation</a>. </p>
+<ul>
+<li>It was last updated on <strong>Dec 25, 2024</strong>.</li>
+<li>Use pan/zoom or touch to navigate around the markmap</li>
+<li>Click any circle (node) to expand/collapse subtree for clarity</li>
+<li>Get the <a href="https://raw.githubusercontent.com/nitya/learns-with-markmaps/refs/heads/main/docs/azure-ai-foundry.mm.md">raw markdown</a> for your own customization.</li>
+</ul>
+<hr/>
+<div class="language-markmap mkdocs-markmap"><markmap-data hidden="true"># Dec 2024
+
+
+
+---
+
+
+
+## 1. Overview 
+
+### 1.1 [What is Azure AI Foundry?]()https://learn.microsoft.com/en-us/azure/ai-studio/what-is-ai-studio 
+
+### 1.2 [Azure AI Foundry architecture](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/architecture) 
+
+### 1.3 [Azure OpenAI in Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-studio/azure-openai-in-ai-studio) 
+
+### 1.4 [Management center](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/management-center) 
+
+### 1.5 [Azure AI Foundry SDK](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/sdk-overview) 
+
+### 1.6 [Region support](https://learn.microsoft.com/en-us/azure/ai-studio/reference/region-support) 
+
+### 1.7 [Azure AI FAQ](https://learn.microsoft.com/en-us/azure/ai-studio/faq) 
+
+### 1.8 [Which studio should I choose?](https://learn.microsoft.com/en-us/ai/ai-studio-experiences-overview?context=/azure/ai-studio/context/context) 
+
+
+
+---
+
+
+
+## 2. Quickstarts
+
+### 2.1 [Use the chat playground](https://learn.microsoft.com/en-us/azure/ai-studio/quickstarts/get-started-playground)
+
+### 2.2 [Build a chat app using the Azure AI SDK](https://learn.microsoft.com/en-us/azure/ai-studio/quickstarts/get-started-code)
+
+### 2.3 [Get started using Azure OpenAI Assistants](https://learn.microsoft.com/en-us/azure/ai-services/openai/assistants-quickstart?context=/azure/ai-studio/context/context)
+
+
+
+---
+
+
+
+## 3. Tutorials
+
+
+
+### 3.1 [Deploy an enterprise chat web app](https://learn.microsoft.com/en-us/azure/ai-studio/tutorials/deploy-chat-web-app)
+
+### 3.2 Build a custom chat app with the Azure AI Foundry SDK
+
+#### 3.2.1 [Set up project and install SDK](https://learn.microsoft.com/en-us/azure/ai-studio/tutorials/copilot-sdk-create-resources)
+
+#### 3.2.2 [Build with data retrieval](https://learn.microsoft.com/en-us/azure/ai-studio/tutorials/copilot-sdk-build-rag)
+
+#### 3.2.3 [Evaluate the chat app](https://learn.microsoft.com/en-us/azure/ai-studio/tutorials/copilot-sdk-evaluate)
+
+
+
+
+
+---
+
+
+
+## 4. How-To
+
+### 4.1 Azure OpenAI and AI Services 
+
+#### 4.1.1 [What are AI services?](https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services?context=/azure/ai-studio/context/context)
+
+#### 4.1.2 [Use Azure AI services in Azure AI Foundry portal](https://learn.microsoft.com/en-us/azure/ai-studio/ai-services/how-to/connect-ai-services)
+
+#### 4.1.3 Azure OpenAI
+
+##### 4.1.3.1 [What is Azure OpenAI?](https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services?context=/azure/ai-studio/context/context)
+
+##### 4.1.3.2 [Use Azure OpenAI Service in Azure AI Foundry portal](https://learn.microsoft.com/en-us/azure/ai-studio/ai-services/how-to/connect-ai-services)
+
+##### 4.1.3.3 Deploy Azure OpenAI models
+
+##### 4.1.3.4 Fine-tune Azure OpenAI models
+
+##### 4.1.3.5 Get started using Azure OpenAI Assistants
+
+##### 4.1.3.6 Use GPT-4o in the real-time audio playground
+
+##### 4.1.3.7 Analyze images and video with GPT-4 for Vision in the playground
+
+##### 4.1.3.8 Use your image data with Azure OpenAI
+
+#### 4.1.4 Azure AI Speech
+
+##### 4.1.4.1 Real-time speech to text
+
+##### 4.1.4.2 Pronunciation assessment
+
+##### 4.1.4.3 Hear and speak with chat in the playground
+
+##### 4.1.4.4 [Fine-tune in Azure AI Foundry portal for custom speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/custom-speech-ai-foundry-portal?context=/azure/ai-studio/context/context)
+
+
+
+### 4.2 Explore and select AI models
+
+#### 4.2.1 Model catalog
+
+#### 4.2.2 Data, privacy, and security for Model Catalog
+
+#### 4.2.3 Model lifecycle and retirement
+
+#### 4.2.4 Model Benchmarking
+
+##### 4.2.4.1 Model benchmarks
+
+##### 4.2.4.2 How to use model benchmarking
+
+#### 4.2.5 Fine-tune Models
+
+##### 4.2.5.1 Fine-tuning overview
+
+##### 4.2.5.2 Fine-tune with user-managed compute
+
+##### 4.2.5.3 Fine-tune Azure OpenAI models
+
+#### 4.2.6 Distillation
+
+#### 4.2.7 Azure OpenAI Models
+
+##### 4.2.7.1 Deploy Azure OpenAI models
+
+##### 4.2.7.2 Fine-tune Azure OpenAI models
+
+#### 4.2.8 Healthcare AI models
+
+##### 4.2.8.1 Foundational AI models for healthcare
+
+##### 4.2.8.2 MedImageInsight - embedding model
+
+##### 4.2.8.3 CXRReportGen - text generation model
+
+##### 4.2.8.4 MedImageParse - prompted segmentation model
+
+#### 4.2.9 Microsoft Phi family models
+
+##### 4.2.9.1 Phi-3 chat models
+
+##### 4.2.9.2 Phi-3 chat model with vision
+
+##### 4.2.9.3 Phi-3.5 chat model with vision
+
+##### 4.2.9.4 Phi-4 chat models
+
+##### 4.2.9.5 Fine-tune Phi-3 chat models
+
+
+
+#### 4.2.10 Cohere models
+
+##### 4.2.10.1 Cohere Command models
+
+##### 4.2.10.2 Cohere Embed models
+
+##### 4.2.10.3 Cohere Rerank models
+
+#### 4.2.11 Meta Llama models
+
+##### 4.2.11.1 Meta Llama family models
+
+##### 4.2.11.2 Fine-tune Meta Llama family models
+
+#### 4.2.12 JAIS model
+
+#### 4.2.13 Jamba models
+
+#### 4.2.14 TimeGEN-1 model
+
+#### 4.2.15 NTTDATA tsuzumi model
+
+#### 4.2.16 Fine-tune tsuzumi model
+
+
+
+### 4.3 Deploy AI models
+
+#### 4.3.1 Deployments overview
+
+#### 4.3.2 Azure AI Model Inference
+
+##### 4.3.2.1 What is the Azure AI model inference service?
+
+##### 4.3.2.2 Upgrade from GitHub Models
+
+##### 4.3.2.3 Add and configure models
+
+##### 4.3.2.4 Deployment types
+
+##### 4.3.2.5 Use the inference endpoint
+
+##### 4.3.2.6 Quotas and limits
+
+##### 4.3.2.7 Azure AI model inference FAQ
+
+#### 4.3.3
+
+##### 4.3.3.1 Deploy models as serverless API
+
+##### 4.3.3.2 Consume serverless API models from a different project or hub
+
+##### 4.3.3.3 Model and region availability for Serverless API deployments
+
+##### 4.3.4 Managed compute
+
+
+
+### 4.4 Create a project
+
+
+
+### 4.5 Manage projects and hubs
+
+#### 4.5.1 Hubs and projects overview
+
+#### 4.5.2 Create your first hub
+
+#### 4.5.3 Create a hub using the Azure Machine Learning SDK and CLI
+
+#### 4.5.4 [Create a hub in the Azure portal](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/create-secure-ai-hub)
+
+#### 4.5.5 Create a hub from template
+
+#### 4.5.6 Create a hub using Terraform
+
+#### 4.5.7 Create and manage compute
+
+
+
+### 4.6 Connections
+
+#### 4.6.1 Connections overview
+
+#### 4.6.2 Create a connection
+
+#### 4.6.3 Create a connection using the Azure Machine Learning SDK
+
+
+
+### 4.7 Data for your generative AI app
+
+#### 4.7.1 Overview of retrieval augmented generation (RAG)
+
+#### 4.7.2 Add data to your project
+
+#### 4.7.3 Build and consume vector indexes
+
+#### 4.7.4 Build and consume indexes using code
+
+#### 4.7.5 Synthetic Data Generation
+
+
+
+### 4.8 Develop generative AI apps
+
+#### 4.8.1 Develop in Azure AI Foundry Portal 
+
+##### 4.8.1.1 Build apps with prompt flow
+
+###### 4.8.1.1.1 [Prompt flow overview](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow)
+
+###### 4.8.1.1.2 Develop flows
+
+- [Create and manage compute session](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/create-manage-compute-session)
+
+- [Create a flow](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/flow-develop)
+
+- [Tune prompts using variants](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/flow-tune-prompts-using-variants)
+
+- [Process images in a flow](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/flow-process-image)
+
+- Use prompt flow tools
+
+    - [Prompt flow tools overview](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/prompt-flow-tools-overview)
+
+    - [LLM tool](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/llm-tool)
+
+    - [Prompt tool](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/prompt-tool)
+
+    - [Python tool](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/python-tool)
+
+    - [Azure OpenAI GPT-4 Turbo with Vision tool](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/azure-open-ai-gpt-4v-tool)
+
+    - [Index Lookup tool](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/index-lookup-tool)
+
+    - [Rerank tool](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/rerank-tool)
+
+    - [Content Safety tool](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/content-safety-tool)
+
+    - [Embedding tool](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/embedding-tool)
+
+    - [Serp API tool](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/serp-api-tool)
+
+###### 4.8.1.1.3 [Troubleshoot prompt flow](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-troubleshoot)
+
+
+
+#### 4.8.2 Develop with code
+
+##### 4.8.2.1 Work with projects in VS Code
+
+##### 4.8.2.2 Start with an AI template
+
+##### 4.8.2.3 Develop with LangChain
+
+##### 4.8.2.4 Develop with LlamaIndex
+
+##### 4.8.2.5 Develop with Semantic Kernel
+
+
+
+#### 4.8.3 Trace Generative AI apps
+
+##### 4.8.3.1 [Tracing overview](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/trace)
+
+##### 4.8.3.2 [Trace your application with Azure AI Inference SDK](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/trace-local-sdk)
+
+##### 4.8.3.3 [Visualize your traces](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/visualize-traces)
+
+
+
+### 4.9 Evaluate generative AI apps
+
+#### 4.9.1 Evaluations Concepts
+
+#### 4.9.2 Evaluation of generative AI models and AI applications
+
+#### 4.9.3 Evaluation and monitoring metrics for generative AI
+
+#### 4.9.4 Manually evaluate prompts in the playground
+
+#### 4.9.5 Generate synthetic and simulated data for evaluation
+
+#### 4.9.6 Evaluate with the Azure AI Evaluation SDK
+
+#### 4.9.7 Run evaluations from the portal
+
+#### 4.9.8 View evaluation results in the portal
+
+#### 4.9.9 Evaluate flows in the portal 
+
+##### 4.9.9.1 Submit batch run and evaluate a flow
+
+##### 4.9.9.2 Develop an evaluation flow in Prompt flow
+
+#### 4.9.10 A/B experimentation
+
+
+
+### 4.10 Deploy and monitor generative AI apps
+
+#### 4.10.1 Continuously monitor your applications
+
+#### 4.10.2 Deploy &amp; Monitor flows
+
+##### 4.10.2.1 Deploy a flow for real-time inference
+
+##### 4.10.2.2 Enable tracing and collect feedback for a flow deployment
+
+##### 4.10.2.3 Monitor prompt flow deployments
+
+##### 4.10.2.4 Troubleshoot deployments and monitoring
+
+
+
+
+
+### 4.11 Costs and quotas
+
+#### 4.11.1 Plan and manage costs
+
+#### 4.11.2 Manage quotas
+
+#### 4.11.3 Increase rate limit
+
+
+
+---
+
+
+
+## 5. Security &amp; Governance
+
+
+
+### 5.1 Identity &amp; Access Management
+
+#### 5.1.1 [Role-based access control in Azure AI Foundry portal](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/rbac-ai-studio)
+
+
+
+### 5.2 Network Security
+
+#### 5.2.1 Configure managed network
+
+#### 5.2.2 Configure private link
+
+#### 5.2.3 Secure playground chat
+
+#### 5.2.4 Securely access on-premises resources
+
+#### 5.2.5 Troubleshoot secure project connectivity
+
+
+
+### 5.3 Data Protection &amp; Encryption
+
+#### 5.3.1 Configure customer-managed keys
+
+#### 5.3.2 Rotate keys
+
+#### 5.3.3 Disable shared key access to storage
+
+
+
+### 5.4 Azure Policies
+
+#### 5.4.1 Built-in policy to allow specific models
+
+#### 5.4.2 Custom policy to allow specific models
+
+
+
+### 5.5 Vulnerability management
+
+### 5.6 Disaster recovery
+
+### 5.7 Security baseline
+
+
+
+---
+
+
+
+## 6. Responsible AI
+
+
+
+### 6.1 [Responsible AI overview]()https://learn.microsoft.com/en-us/azure/ai-studio/responsible-use-of-ai-overview
+
+### 6.2 [What is Azure AI Content Safety?](https://learn.microsoft.com/en-us/azure/ai-studio/ai-services/content-safety-overview)
+
+### 6.3 [Use Azure AI Content Safety in the portal](https://learn.microsoft.com/en-us/azure/ai-studio/ai-services/how-to/content-safety)
+
+### 6.4 [Content filtering](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/content-filtering)
+
+### 6.5 [Use blocklists](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/use-blocklists)
+
+### 6.6 [Transparency notes for Azure AI Services](https://learn.microsoft.com/en-us/azure/ai-services/responsible-use-of-ai-overview?context=/azure/ai-studio/context/context)
+
+### 6.7 [Limited Access features](https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-limited-access?context=/azure/ai-studio/context/context)
+
+### 6.8 [System message templates](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/system-message?context=/azure/ai-studio/context/context)
+
+### 6.9 [Transparency Note for safety evaluations](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/safety-evaluations-transparency-note)
+
+
+
+---
+
+
+
+## 7. Reference
+
+
+
+### 7.1 [Azure AI Projects SDK](https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme)
+
+### 7.2 [Azure Machine Learning Python SDK](https://learn.microsoft.com/en-us/python/api/overview/azure/ai-ml-readme)
+
+### 7.3 [Azure Machine Learning REST API](https://learn.microsoft.com/en-us/rest/api/azureml)
+
+### 7.4 [Azure AI services SDKs](https://learn.microsoft.com/en-us/azure/ai-services/reference/sdk-package-resources?context=/azure/ai-studio/context/context)
+
+### 7.5 [Azure AI services REST APIs](https://learn.microsoft.com/en-us/azure/ai-services/reference/rest-api-resources?context=/azure/ai-studio/context/context)
+
+### 7.6 [Prompt flow Python SDK](https://microsoft.github.io/promptflow/reference/index.html)
+
+### 7.7 Azure AI Model Inference API
+
+#### 7.7.1 [What's the Azure AI Model Inference API?]()
+
+#### 7.7.2 Reference
+
+##### 7.7.2.1 [Get Info](https://learn.microsoft.com/en-us/azure/ai-studio/reference/reference-model-inference-info)
+
+##### 7.7.2.2 [Embeddings](https://learn.microsoft.com/en-us/azure/ai-studio/reference/reference-model-inference-embeddings)
+
+##### 7.7.2.3 [Completions](https://learn.microsoft.com/en-us/azure/ai-studio/reference/reference-model-inference-completions)
+
+##### 7.7.2.4 [Chat Completions]()https://learn.microsoft.com/en-us/azure/ai-studio/reference/reference-model-inference-chat-completions
+
+##### 7.7.2.5 [Images Embeddings](https://learn.microsoft.com/en-us/azure/ai-studio/reference/reference-model-inference-images-embeddings)
+
+### 7.8. [Azure Policy built-ins](https://learn.microsoft.com/en-us/azure/ai-services/policy-reference?context=/azure/ai-studio/context/context)
+
+
+
+---
+
+
+
+## 8. Resources
+
+
+
+### 8.1 Support &amp; help options
+
+### 8.2 Use Azure AI Foundry with a screen reader
+
+### 8.3 Region support
+
+### 8.4 Azure updates
+
+### 8.5 Pricing calculator
+
+### 8.6 Compliance
+
+### 8.7 Service Level Agreement (SLA)
+
+### 8.8 Azure Government
+
+### 8.9 Videos
+
+### 8.10 Azure Blog
+
+### 8.11 Artificial Intelligence and Machine Learning Blog
+
+### 8.12 LLMOps with Prompt Flow
+
+
+
+---
+
+
+</markmap-data></div>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Welcome" class="md-footer__link md-footer__link--prev" href="..">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                Welcome
+              </div>
+</div>
+</a>
+<a aria-label="Next: BookOfNews: MSIgnite 2024" class="md-footer__link md-footer__link--next" href="../bon-msignite-2024/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                BookOfNews: MSIgnite 2024
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright © 2024 - present Nitya Narasimhan <br/>🍪 | <a href="#__consent">Change cookie settings</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<div class="md-progress" data-md-component="progress" role="progressbar"></div>
+<div class="md-consent" data-md-component="consent" hidden="" id="__consent">
+<div class="md-consent__overlay"></div>
+<aside class="md-consent__inner">
+<form class="md-consent__form md-grid md-typeset" name="consent">
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" id="__settings" type="checkbox"/>
+<div class="md-consent__settings">
+<ul class="task-list">
+<li class="task-list-item">
+<label class="task-list-control">
+<input checked="" name="analytics" type="checkbox"/>
+<span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+</li>
+<li class="task-list-item">
+<label class="task-list-control">
+<input checked="" name="github" type="checkbox"/>
+<span class="task-list-indicator"></span>
+          GitHub
+        </label>
+</li>
+</ul>
+</div>
+<div class="md-consent__controls">
+<button class="md-button md-button--primary">Accept</button>
+<label class="md-button" for="__settings">Manage settings</label>
+</div>
+</form>
+</aside>
+</div>
+<script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+<script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.expand", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.indexes", "navigation.top", "toc.follow", "navigation.footer", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+<script type="text/javascript">(function initializeMarkmap() {
+    const transformer = new markmap.Transformer();
+    const assets = transformer.getAssets();
+    const loading = Promise.all([
+        assets.styles && markmap.loadCSS(assets.styles),
+        assets.scripts && markmap.loadJS(assets.scripts),
+    ]);
+
+    function parseData(content) {
+        const { root, frontmatter } = transformer.transform(content);
+        let options = markmap.deriveOptions(frontmatter?.markmap);
+        options = Object.assign({
+            fitRatio: 0.85,
+        }, options);
+        return { root, options };
+    }
+
+    function resetMarkmap(m, el) {
+        const { minX, maxX, minY, maxY } = m.state;
+        const height = el.clientWidth * (maxX - minX) / (maxY - minY);
+        el.style.height = height + "px";
+        m.fit();
+    }
+
+    function renderMarkmap(el) {
+        let svg = el.querySelector('svg');
+        if (svg) return;
+        const content = el.textContent;
+        el.innerHTML = '<svg>';
+        svg = el.firstChild;
+        const { root, options } = parseData(content);
+        const m = markmap.Markmap.create(svg, options, root);
+        resetMarkmap(m, el);
+        transformer.hooks.retransform.tap(() => {
+            const { root, options } = parseData(content);
+            m.setData(root, options);
+            resetMarkmap(m, el);
+        });
+    }
+
+    function updateMarkmaps(node) {
+        for (const el of node.querySelectorAll('.mkdocs-markmap')) {
+            renderMarkmap(el);
+        }
+    }
+
+    loading.then(() => {
+        const observer = new MutationObserver((mutationList) => {
+            for (const mutation of mutationList) {
+                if (mutation.type === 'childList') {
+                    for (const node of mutation.addedNodes) {
+                        updateMarkmaps(node);
+                    }
+                }
+            }
+        });
+
+        observer.observe(document.body, { childList: true });
+
+        updateMarkmaps(document);
+    });
+})();
+</script></body>
+</html>
